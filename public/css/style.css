@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background: url('background-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a, .cta-btn {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.latest-updates {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.updates-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.update-card {
+    flex: 1 1 30%;
+    margin: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background-color: #eaeaea;
+    padding: 20px;
+}
+
+.cta-section {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.raves, .membership {
+    padding: 40px 20px;
+}
+
+.plans-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.plan-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .updates-grid, .stats, .plans-grid {
+        flex-direction: column;
+    }
+
+    .cta-btn {
+        margin: 20px 0;
+    }
+}
